@@ -1,0 +1,642 @@
+{
+	"info": {
+		"_postman_id": "127804ee-acf5-4969-aa3b-b347e89c1b37",
+		"name": "Turky-Rahyab-Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14413216",
+		"_collection_link": "https://www.postman.com/atrotech/workspace/nima/collection/14413216-127804ee-acf5-4969-aa3b-b347e89c1b37?action=share&creator=14413216&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Login API",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"nima\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign-up API",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Api-Key",
+								"value": "web.92f8d3ab412f4ecebcaaf18a41e83a82",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"nimaaaa\",\n    \"email\": \"nimadorostkaaar97@gmail.com\",\n    \"password\": \"12345678\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/sign-up",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"sign-up"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2MzE5Njc2LCJpYXQiOjE2ODYzMTI0NzYsImp0aSI6ImZkMWJjMjk2OWU4ZTQ4MWFhZDM5M2RhYzY0MjA5MjQ5IiwidXNlcl9pZCI6M30.oRPklea8hr3dK9nEXLopNhYWf0Lf7IqSixaDWnl7bpc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"father_name\": \"farhadddddddd\",\n    \"national_code\": \"262333322222\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "token refresh",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Api-Key",
+								"value": "web.92f8d3ab412f4ecebcaaf18a41e83a82",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY3MjU4MTQzMywiaWF0IjoxNjcxOTc2NjMzLCJqdGkiOiIxZWIyNThlNWZhZWQ0ZjQwODcwMmFiMzNjZGRjYTIzNSIsInVzZXJfaWQiOjF9.ZJBYI47rEXQ2PBqtyEchJVx_ObM4sQ1XpPxOTTPpMXE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/user/rest-auth/token/refresh/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"rest-auth",
+								"token",
+								"refresh",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Announcement",
+			"item": [
+				{
+					"name": "Insert Announcement API",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2MzIwMjEyLCJpYXQiOjE2ODYzMTMwMTIsImp0aSI6IjIwZTQ5OTc0NGZkYzQ1NzFhNGViZTk3ZGI5YWY3NmI0IiwidXNlcl9pZCI6M30.1WJ2XgQaMnns_HWLDWfWmq7vO5dEsTtOk3R925pC6T4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"testtttt\",\n    \"content\": \"test bodddyyyyy\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/announcements",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"announcements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accept Announcement by Admin API",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2MzIxMzgyLCJpYXQiOjE2ODYzMTQxODIsImp0aSI6IjE1YmJkNTQyNjAwNzRkMDQ5OTUzOWU5OGVmNDhkNzZiIiwidXNlcl9pZCI6MX0.CHJJsPZ3HbWPZAgAU_J149hm4S3gwAZwRIlmgitWAjc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"announcement_id\": \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/announcements/1/accept",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"announcements",
+								"1",
+								"accept"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Announcement API",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2MzIxMzgyLCJpYXQiOjE2ODYzMTQxODIsImp0aSI6IjE1YmJkNTQyNjAwNzRkMDQ5OTUzOWU5OGVmNDhkNzZiIiwidXNlcl9pZCI6MX0.CHJJsPZ3HbWPZAgAU_J149hm4S3gwAZwRIlmgitWAjc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"zzzzzzzz\",\n    \"content\": \"test bodddyyzzzzzyyy\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/announcements/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"announcements",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Announcement API",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2MzIxMzgyLCJpYXQiOjE2ODYzMTQxODIsImp0aSI6IjE1YmJkNTQyNjAwNzRkMDQ5OTUzOWU5OGVmNDhkNzZiIiwidXNlcl9pZCI6MX0.CHJJsPZ3HbWPZAgAU_J149hm4S3gwAZwRIlmgitWAjc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"announcement_id\": \"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/announcements/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"announcements",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Announcements API",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2MzIwMjEyLCJpYXQiOjE2ODYzMTMwMTIsImp0aSI6IjIwZTQ5OTc0NGZkYzQ1NzFhNGViZTk3ZGI5YWY3NmI0IiwidXNlcl9pZCI6M30.1WJ2XgQaMnns_HWLDWfWmq7vO5dEsTtOk3R925pC6T4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/announcements",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"announcements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Announcements API",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2MzIwMjEyLCJpYXQiOjE2ODYzMTMwMTIsImp0aSI6IjIwZTQ5OTc0NGZkYzQ1NzFhNGViZTk3ZGI5YWY3NmI0IiwidXNlcl9pZCI6M30.1WJ2XgQaMnns_HWLDWfWmq7vO5dEsTtOk3R925pC6T4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/announcements/search?query=tt",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"announcements",
+								"search"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "tt"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Number of Views API",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2MzIwMjEyLCJpYXQiOjE2ODYzMTMwMTIsImp0aSI6IjIwZTQ5OTc0NGZkYzQ1NzFhNGViZTk3ZGI5YWY3NmI0IiwidXNlcl9pZCI6M30.1WJ2XgQaMnns_HWLDWfWmq7vO5dEsTtOk3R925pC6T4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/announcements/3/views",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"announcements",
+								"3",
+								"views"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My Announcements API",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2MzIwMjEyLCJpYXQiOjE2ODYzMTMwMTIsImp0aSI6IjIwZTQ5OTc0NGZkYzQ1NzFhNGViZTk3ZGI5YWY3NmI0IiwidXNlcl9pZCI6M30.1WJ2XgQaMnns_HWLDWfWmq7vO5dEsTtOk3R925pC6T4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/my-announcements",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"my-announcements"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "landing",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}",
+					"host": [
+						"{{base_url}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "localhost:8000",
+			"type": "string"
+		},
+		{
+			"value": "",
+			"disabled": true
+		}
+	]
+}
