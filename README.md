@@ -1,5 +1,4 @@
-# Davaat-BackEnd-API-Service
-Turky-Rahyab-Task API Services
+# Turky-Rahyab-Task API Services
 <hr>
 
 The announcements system  in **Django** Framework. [Nima Dorostkar](https://nimadorostkar.com/)
