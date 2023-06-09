@@ -5,6 +5,7 @@ Turky-Rahyab-Task API Services
 The announcements system  in **Django** Framework. [Nima Dorostkar](https://nimadorostkar.com/)
 
 
+
 ### Clone this repository
 
 ```
@@ -31,7 +32,7 @@ python manage.py runserver
 
 <br>
 
-![Turky-Rahyab-Task](https://github.com/nimadorostkar/Turky-Rahyab-Task/blob/main/Screenshot.png)
+![Turky-Rahyab-Task](https://github.com/nimadorostkar/Turky-Rahyab-Task/blob/master/Screenshot.png)
 
 
 <br><br>
