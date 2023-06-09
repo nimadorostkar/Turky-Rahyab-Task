@@ -9,10 +9,6 @@ The announcements system  in **Django** Framework. [Nima Dorostkar](https://nima
 ### Clone this repository
 
 ```
-rm -rf
-```
-
-```
 git clone https://github.com/nimadorostkar/Turky-Rahyab-Task.git
 ```
 
